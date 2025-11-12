@@ -5,23 +5,13 @@
 ### Configure Reactor Netty version
 
 Bump `Reactor BOM` version in `pom.xml`
+(When `Spring Boot 4` is released there will be no need to bump the `Reactor BOM` version)
 ```xml
 <properties>
-	<reactor-bom.version>2024.0.0</reactor-bom.version>
+	<reactor-bom.version>2025.0.0</reactor-bom.version>
 </properties>
 ```
 
-### Add dependency to Netty Http3 Codec
-
-In `pom.xml` add dependency to [netty-incubator-codec-http3](https://github.com/netty/netty-incubator-codec-http3)
-```xml
-<dependency>
-	<groupId>io.netty.incubator</groupId>
-	<artifactId>netty-incubator-codec-http3</artifactId>
-	<version>0.0.28.Final</version>
-	<scope>runtime</scope>
-</dependency>
-```
 ### Configure SSL Bundle
 
 In `application.yml` add the `SSL` configuration

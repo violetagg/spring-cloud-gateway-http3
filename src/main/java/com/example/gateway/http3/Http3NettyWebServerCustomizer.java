@@ -1,7 +1,7 @@
 package com.example.gateway.http3;
 
 import org.springframework.boot.ssl.SslBundle;
-import org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory;
+import org.springframework.boot.reactor.netty.NettyReactiveWebServerFactory;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.stereotype.Component;
 import reactor.netty.http.Http3SslContextSpec;

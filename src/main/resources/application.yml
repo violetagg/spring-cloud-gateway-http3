@@ -4,7 +4,7 @@ spring:
   application:
     name: gateway.http3
   cloud:
-    gateway:
+    gateway.server.webflux:
       routes:
       - id: path_route
         uri: https://projectreactor.io
